@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phonebook</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="app.js"></script>
+    <style>
+        #notification {
+            float: right;
+            background: #991111;
+            color: #ffffff;
+            padding: 0.5em 2em 0.5em 2em;
+            margin: 1em;
+            display: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        #list span{
+            display: inline-block;
+            width: 10em;
+        }
+    </style>
+</head>
+<body>
+<h1>Phonebook</h1>
+<div id="contacts">
+    <h2>Contacts</h2>
+    <ul id="list">
+    </ul>
+</div>
+<div id="create">
+    <h2>Create Contact</h2>
+    <label for="crtName">Name: </label><input id="crtName" type="text"/>
+    <label for="crtPhone">Phone: </label><input id="crtPhone" type="text"/>
+    <button id="btnCreate">Create New</button>
+</div>
+<div id="notification"></div>
+</body>
+</html>
