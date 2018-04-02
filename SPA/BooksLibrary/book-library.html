@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Library</title>
+    <script src="./scripts/jQuery%20v3.3.1.js"></script>
+    <script src="./scripts/book-library.js"></script>
+    <link rel="stylesheet" href="styles/book-library.css">
+</head>
+<body>
+<header id="menu">
+    <a href="#" id="linkHome">Home</a>
+    <a href="#" id="linkLogin">Login</a>
+    <a href="#" id="linkRegister">Register</a>
+    <a href="#" id="linkBooks">List Books</a>
+    <a href="#" id="linkCreate">Create Book</a>
+    <a href="#" id="linkLogout">Logout</a>
+    <span id="loggedInUser"></span>
+</header>
+
+<main>
+    <div id="loadingBox" class="notification">Loading ...</div>
+    <div id="infoBox" class="notification">Info</div>
+    <div id="errorBox" class="notification">Error</div>
+
+    <section id="viewHome">
+        <h1>Welcome</h1>
+        <div class="content">
+            <p>
+                Welcome to our book library.
+            </p>
+        </div>
+    </section>
+
+    <section id="viewLogin">
+        <h1>Please Login</h1>
+        <div class="content">
+            <form>
+                <label for="inputUsername">Username:</label>
+                <input id="inputUsername" type="text">
+                <label for="inputPassword">Password:</label>
+                <input id="inputPassword" type="password">
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </section>
+
+    <section id="viewRegister">
+        <h1>Please register here</h1>
+        <div class="content">
+            <form>
+                <label for="inputNewUsername">Username:</label>
+                <input id="inputNewUsername" type="text">
+                <label for="inputNewPassword">Password:</label>
+                <input id="inputNewPassword" type="password">
+                <label for="inputNewPasswordRepeat">Confirm Password:</label>
+                <input id="inputNewPasswordRepeat" type="password">
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </section>
+
+    <section id="viewBooks">
+        <h1>Books</h1>
+        <div class="content">
+            <table>
+                <thead>
+                   <tr>
+                       <th>Title</th>
+                       <th>Author</th>
+                       <th>Description</th>
+                       <th>Actions</th>
+                   </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="viewCreate">
+        <h1>Create new book</h1>
+        <div class="content">
+            <form>
+                <label for="inputNewTitle">Title:</label>
+                <input id="inputNewTitle" type="text">
+                <label for="inputNewAuthor">Author:</label>
+                <input id="inputNewAuthor" type="text">
+                <label for="inputNewDescr">Description:</label>
+                <textarea id="inputNewDescr"></textarea>
+                <input type="submit" value="Create">
+            </form>
+        </div>
+    </section>
+
+    <section id="viewEdit">
+        <h1>Edit new book</h1>
+        <div class="content">
+            <form>
+                <label for="inputTitle">Title:</label>
+                <input id="inputTitle" type="text">
+                <label for="inputAuthor">Author:</label>
+                <input id="inputAuthor" type="text">
+                <label for="inputDescr">Description:</label>
+                <textarea id="inputDescr"></textarea>
+                <input type="submit" value="Edit">
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>Book Library - Simple SPA Application</footer>
+</body>
+</html>
