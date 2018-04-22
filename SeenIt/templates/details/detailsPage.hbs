@@ -1,0 +1,21 @@
+{{> header}}
+
+<div class="content">
+    {{#if loggedIn}}
+        {{> menu}}
+    {{/if}}
+    <div class="post">
+        {{> postDetails}}
+    </div>
+    <div class="post post-content">
+        {{> commentForm}}
+    </div>
+
+    {{#each comments}}
+        {{> comment}}
+    {{else}}
+            <p>No comments yet.</p>
+    {{/each}}
+</div>
+
+{{> footer}}

@@ -1,0 +1,21 @@
+{{> header}}
+
+<div class="content">
+    {{#if loggedIn}}
+        {{> menu}}
+    {{/if}}
+    <div class="welcome">
+        <div class="signup">
+            {{#unless loggedIn}}
+              {{> loginForm}}
+              {{> registerForm}}
+            {{/unless}}
+        </div>
+
+        <div class="about">
+            {{> about}}
+        </div>
+    </div>
+</div>
+
+{{> footer}}

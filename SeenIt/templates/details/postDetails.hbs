@@ -1,0 +1,26 @@
+<div class="col thumbnail">
+    <a href="{{url}}">
+        <img src="{{imageUrl}}">
+    </a>
+</div>
+<div class="post-content">
+    <div class="title">
+        <a href="{{url}}">
+            {{title}}
+        </a>
+    </div>
+    <div class="details">
+        <p>{{description}}</p>
+        <div class="info">
+            submitted {{interval}} ago by {{author}}
+        </div>
+        <div class="controls">
+            <ul>
+                <li class="action"><a class="editLink" href="#/edit/{{postId}}">edit</a></li>
+                <li class="action"><a class="deleteLink" href="#/delete/{{postId}}">delete</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<div class="clear"></div>
